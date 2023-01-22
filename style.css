@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.line{
+    background-color:brown;
+    width:0;
+    height:6px;
+    position:absolute;
+    left:0;
+    border-radius: 3px;
+    transition:width 0.2s ease-in-out;
+}
+nav{
+    background:#F4A460;
+    color:brown;
+    font-size: 1.5rem;
+    font-weight: 600;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul{
+    list-style: none;
+}
+body{
+    background:#DEB887;
+}
+main{
+    margin-top: 50px;
+    display:flex;
+    justify-content: center;
+
+}
+.gameContainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    
+}
+.box{
+    border: 2px solid brown;
+    font-size: 6vw;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color:rgba(255, 248, 220, 0.6);
+}
+.gameInfo{
+    padding:0px 34px;
+}
+.winimage{
+    width:170px;
+    height:170px;
+    margin: 30px;
+    
+}
+.hide{
+   display: none; 
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin:0 23px;
+    padding: 6px 14px;
+    background:#F4A460;
+    color:brown;
+    border: 2pz solid brown;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#reset:hover{
+    background-color: antiquewhite;
+    
+}
+.info{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+@media screen and (max-width:600px){
+    main,li{
+        flex-wrap:wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+}
